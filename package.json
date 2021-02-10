@@ -1,0 +1,38 @@
+{
+  "name": "geniusee-test-task",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/deltall1/geniusee-test-task.git"
+  },
+  "author": "andrey.alekseev.1910@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/deltall1/geniusee-test-task/issues"
+  },
+  "homepage": "https://github.com/deltall1/geniusee-test-task#readme",
+  "dependencies": {
+    "amazon-cognito-identity-js": "^4.5.10",
+    "aws-sdk": "^2.840.0",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "express-graphql": "^0.12.0",
+    "graphql": "^15.5.0",
+    "jsonwebtoken": "^8.5.1",
+    "jwk-to-pem": "^2.0.4",
+    "mongoose": "^5.11.15",
+    "node-fetch": "^2.6.1",
+    "request": "^2.88.2"
+  },
+  "devDependencies": {
+    "@types/mongoose": "^5.10.3",
+    "nodemon": "^2.0.7"
+  }
+}
