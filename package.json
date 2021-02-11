@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node src/app.js",
-    "dev": "nodemon src/app.js"
+    "dev": "serverless offline start",
+    "deploy": "serverless deploy --stage prod"
   },
   "repository": {
     "type": "git",
@@ -18,21 +18,27 @@
   },
   "homepage": "https://github.com/deltall1/geniusee-test-task#readme",
   "dependencies": {
+    "@graphql-tools/merge": "^6.2.7",
     "amazon-cognito-identity-js": "^4.5.10",
+    "amazon-cognito-identity-js-typescript": "^1.22.0",
+    "apollo-server-lambda": "^2.20.0",
     "aws-sdk": "^2.840.0",
-    "bcryptjs": "^2.4.3",
     "body-parser": "^1.19.0",
-    "express": "^4.17.1",
-    "express-graphql": "^0.12.0",
+    "class-validator": "^0.13.1",
+    "dotenv": "^8.2.0",
     "graphql": "^15.5.0",
     "jsonwebtoken": "^8.5.1",
-    "jwk-to-pem": "^2.0.4",
     "mongoose": "^5.11.15",
-    "node-fetch": "^2.6.1",
-    "request": "^2.88.2"
+    "type-graphql": "^1.1.1"
   },
   "devDependencies": {
     "@types/mongoose": "^5.10.3",
-    "nodemon": "^2.0.7"
+    "serverless-dotenv-plugin": "^3.3.0",
+    "serverless-offline": "^6.8.0",
+    "serverless-webpack": "^5.3.5",
+    "ts-loader": "^8.0.16",
+    "typescript": "^4.1.4",
+    "webpack": "^5.21.2",
+    "webpack-node-externals": "^2.5.2"
   }
 }
